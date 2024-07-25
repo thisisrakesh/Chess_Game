@@ -287,40 +287,40 @@ class Board(object):
         self.sqs = [[], [], [], [], [], [], [], []]
         self.IMAGES = [
             pygame.transform.scale(
-                pygame.image.load("Assets\\WhiteKing.png"), (64, 85)
+                pygame.image.load("WhiteKing.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\WhiteQueen.png"), (64, 85)
+                pygame.image.load("WhiteQueen.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\WhiteRook.png"), (64, 85)
+                pygame.image.load("WhiteRook.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\WhiteBishop.png"), (64, 85)
+                pygame.image.load("WhiteBishop.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\WhiteKnight.png"), (64, 85)
+                pygame.image.load("WhiteKnight.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\WhitePawn.png"), (64, 85)
+                pygame.image.load("WhitePawn.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\BlackKing.png"), (64, 85)
+                pygame.image.load("BlackKing.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\BlackQueen.png"), (64, 85)
+                pygame.image.load("BlackQueen.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\BlackRook.png"), (64, 85)
+                pygame.image.load("BlackRook.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\BlackBishop.png"), (64, 85)
+                pygame.image.load("BlackBishop.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\BlackKnight.png"), (64, 85)
+                pygame.image.load("BlackKnight.png"), (64, 85)
             ),
             pygame.transform.scale(
-                pygame.image.load("Assets\\BlackPawn.png"), (64, 85)
+                pygame.image.load("BlackPawn.png"), (64, 85)
             ),
         ]
         self.colors = [[], [], [], [], [], [], [], []]
