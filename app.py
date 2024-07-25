@@ -2,7 +2,7 @@ from sys import exit
 import pygame
 import streamlit as st
 pygame.init()
-st.heade("Chess Battle")
+st.header("Chess Battle")
 surface = pygame.display.set_mode((640, 640))
 pygame.display.set_caption("Chess")
 
