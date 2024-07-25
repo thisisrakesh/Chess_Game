@@ -287,7 +287,7 @@ class Board(object):
         self.sqs = [[], [], [], [], [], [], [], []]
         self.IMAGES = [
             pygame.transform.scale(
-                st.pygame.image.load("WhiteKing.png"), (64, 85)
+                pygame.image.load("WhiteKing.png"), (64, 85)
             ),
             pygame.transform.scale(
                 pygame.image.load("WhiteQueen.png"), (64, 85)
