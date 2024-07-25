@@ -280,15 +280,7 @@ class ValidMoveGenerator(object):
 
 
 validMoveGen = ValidMoveGenerator()
-import pygame
-import streamlit as st
-import numpy as np
-from PIL import Image
 
-# Initialize Pygame
-pygame.init()
-
-# Define the Board class
 class Board(object):
     def __init__(self):
         self.sqs = [[], [], [], [], [], [], [], []]
@@ -341,81 +333,6 @@ class Board(object):
                     self.colors[i].append((200, 200, 200))
                 else:
                     self.colors[i].append((30, 30, 30))
-
-# Initialize the board
-board = Board()
-
-# Create a surface to draw the board
-surface = pygame.Surface((640, 640))
-
-# Draw the board
-for i in range(8):
-    for j in range(8):
-        color = board.colors[i][j]
-        pygame.draw.rect(surface, color, board.sqs[i][j])
-
-# Save the surface as an image
-pygame.image.save(surface, "chessboard.png")
-
-# Load the image using PIL
-chessboard_image = Image.open("chessboard.png")
-
-# Display the image using Streamlit
-st.image(chessboard_image, caption='Chess Board')
-
-'''
-class Board(object):
-    def __init__(self):
-        self.sqs = [[], [], [], [], [], [], [], []]
-        self.IMAGES = [
-            pygame.transform.scale(
-                pygame.image.load("WhiteKing.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("WhiteQueen.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("WhiteRook.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("WhiteBishop.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("WhiteKnight.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("WhitePawn.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("BlackKing.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("BlackQueen.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("BlackRook.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("BlackBishop.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("BlackKnight.png"), (64, 85)
-            ),
-            pygame.transform.scale(
-                pygame.image.load("BlackPawn.png"), (64, 85)
-            ),
-        ]
-        self.colors = [[], [], [], [], [], [], [], []]
-        self.createBoard()
-
-    def createBoard(self):
-        for i in range(8):
-            for j in range(8):
-                self.sqs[i].append(pygame.Rect(j * 80, i * 80, 80, 80))
-                if i % 2 == j % 2:
-                    self.colors[i].append((200, 200, 200))
-                else:
-                    self.colors[i].append((30, 30, 30))'''
 
 
     def colorBoard(self):
